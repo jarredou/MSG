@@ -20,9 +20,9 @@ def parseConfig(config):
 
 def run_inference(audio_example, generator_checkpoint, config=None):
     device = torch.device(f"cuda:0" if torch.cuda.is_available() else "cpu")
-    sample_rate = 16_000
+    sample_rate = 44100
     data, sr = librosa.load(audio_example, sr=sample_rate)
-    netG = Demucs([""],audio_channels=1, samplerate=sample_rate ,segment_length=16_000, skip_cxn = True,lstm_layers=0, normalize=True).to(device)
+    netG = Demucs([""],audio_channels=1, samplerate=sample_rate ,segment_length=44100, skip_cxn = True,lstm_layers=0, normalize=True).to(device)
     netG.load_state_dict(torch.load(generator_checkpoint))
     netG.eval()
     

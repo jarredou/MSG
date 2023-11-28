@@ -13,7 +13,7 @@ parameters:
   mono: True
 
   # Directories
-  model_save_dir: /content/model # Directory to save to
+  model_save_dir: /content/model/ # Directory to save to
   model_load_dir: # Directory to load saves from to
   train_sources_path: /content/drive/MyDrive/dataset/train # Directory of training set
   valid_sources_path: /content/drive/MyDrive/dataset/valid # Directory of training set
@@ -21,7 +21,7 @@ parameters:
   # Dataloader parameters
   sample_rate: 44100
   mix_folder: 'mixture'
-  segment_duration: 1
+  segment_duration: 2
   verbose: True
   disable_save: False
 
@@ -33,13 +33,13 @@ parameters:
   start_epoch: 0
   pretrain_epoch: 0
   n_epochs: 5000
-  validation_epoch: 1
-  validation_song: 'song_validation.wav' # Song in validation set to display in weights and biases
+  validation_epoch: 2
+  validation_song: 'song_099.wav' # Song in validation set to display in weights and biases
   validation_song_start: 20
   validation_song_end: 30
-  checkpoint_interval: 10
+  checkpoint_interval: 1
   lstm_layers: 0
-  batch_size: 12
+  batch_size: 6
   n_cpu: 2
   gpus: [1]
   l1interval: 10
