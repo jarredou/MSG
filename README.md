@@ -1,6 +1,6 @@
-# MSG#&nbsp;MSG
+# MSG
 
-Edited version of MSG and fixed Nussl (depedency code update)
+Quicky edited version of MSG and fixed Nussl file (depedency code update)
 
 
 
