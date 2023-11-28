@@ -15,7 +15,7 @@ import soundfile as sf
 import matplotlib.pyplot as plt
 import imageio
 from utils.autoclip import AutoClip
-os.environ["WANDB_MODE"]="offline"
+
 import torch.nn as nn
 
 from models.Demucs import *
@@ -26,6 +26,7 @@ from utils.losses import *
 import utils.save_and_log as sal
 import utils.RunEpoch as rp
 
+# os.environ["WANDB_MODE"]="offline"
 
 pattern = re.compile('[\W_]+')
 #default GPU is 1
