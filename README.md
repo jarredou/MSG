@@ -1,6 +1,6 @@
 # MSG
 
-Quicky edited version of MSG and fixed Nussl file (depedency code update)
+Quickly edited version of MSG for 44100hz audio and fixed Nussl file (depedency code update)
 
 
 
