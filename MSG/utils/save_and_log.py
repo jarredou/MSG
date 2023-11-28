@@ -142,16 +142,16 @@ def iteration_logs(netD, netG, optG, optD, steps, epoch, config, best_l1,best_SD
             spec_data = librosa.feature.melspectrogram(y=aud_mono,
                                                        sr=config.sample_rate,
                                                        n_mels=128,
-                                                       fmax=8000)
+                                                       fmax=22050)
         else:
             spec_data = librosa.feature.melspectrogram(y=aud[i], sr=config.sample_rate,
                                                        n_mels=128,
-                                                       fmax=8000)
+                                                       fmax=22050)
         S_dB = librosa.power_to_db(spec_data, ref=np.max)
         _fig_ax = librosa.display.specshow(S_dB, x_axis='time',
                                            y_axis='mel',
                                            sr=config.sample_rate,
-                                           fmax=8000, ax=axes[i])
+                                           fmax=22050, ax=axes[i])
         axes[i].set(title=titles[i])
     plt.savefig(f'spectrogram_{epoch}.png')
     wandb.log({f'Spectrograms, {epoch} Epochs':
