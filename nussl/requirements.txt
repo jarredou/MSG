@@ -1,0 +1,20 @@
+jams
+librosa
+matplotlib
+museval
+musdb
+pyyaml
+zarr
+ffmpy
+torch
+pytorch-ignite
+tensorboard
+norbert
+tqdm
+termtables
+gpytorch
+ffmpeg-python
+importlib_resources
+sox
+pyloudnorm
+soxbindings>=1.2.2 ; platform_system!='Windows'
