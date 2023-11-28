@@ -1,6 +1,6 @@
 # MSG
 
-Quickly edited version of MSG for 44100hz audio and fixed Nussl file (depedency code update)
+Quickly edited version of MSG for 44100hz audio and python >=3.9 compatibility (and a fixed Nussl file because of depedency code update)
 
 
 
