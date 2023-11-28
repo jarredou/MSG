@@ -34,7 +34,7 @@ parameters:
   pretrain_epoch: 0
   n_epochs: 5000
   validation_epoch: 2
-  validation_song: 'song_099.wav' # Song in validation set to display in weights and biases
+  validation_song: 'validation_song.wav' # Song in validation set to display in weights and biases
   validation_song_start: 20
   validation_song_end: 30
   checkpoint_interval: 1
